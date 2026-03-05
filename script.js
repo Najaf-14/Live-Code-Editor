@@ -2,7 +2,7 @@ let allInputs = document.querySelectorAll('.top textarea');
 let output = document.querySelector("#output");
 
 let htmlCode = "<h1>Start Coding</h1>";
-let cssCode = "h1{color:red}";
+let cssCode = "h1{color:red;}";
 let jsCode = "console.log('Hello World!')";
 
 allInputs[0].value = htmlCode
