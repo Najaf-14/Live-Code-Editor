@@ -68,6 +68,8 @@ label {
 
 textarea {
     flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
     padding: 12px;
     resize: none;
     color: white;
