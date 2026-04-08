@@ -12,7 +12,7 @@ let htmlCode = `<!DOCTYPE html>
     <h2>Start Coding!</h2>
 </body>
 </html>`;
-let cssCode = "h2{color:red;}";
+let cssCode = "h2{color: red; text-align: center}";
 let jsCode = "console.log('Hello World!')";
 
 allInputs[0].value = htmlCode
