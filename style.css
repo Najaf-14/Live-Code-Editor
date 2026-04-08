@@ -1,77 +1,102 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    width: 100%;
-    height: 100%;
-    background-color: #1F2430;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
 }
 
-.heading{
+body {
+    background-color: #1F2430;
+    font-family: sans-serif;
+}
+
+.heading {
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
-hr{
-    color: white;
+.heading h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+hr {
     background-color: white;
     margin: 10px;
     height: 1px;
     border: none;
 }
 
-.container{
+.container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
-.top{
+.top {
     display: flex;
     flex: 1;
     gap: 6px;
 }
 
-.html-part, .css-part, .js-part{
+.html-part, 
+.css-part, 
+.js-part {
     flex: 1;
-    flex-basis: 33%;
     background-color: #232B3B;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
+    border: 1px solid #3A4256;
 }
 
-label{
-    color: white;
-    margin: 5px;
-    font-weight: bold;
+.html-part:hover,
+.css-part:hover,
+.js-part:hover {
+    transform: scale(1.01);
 }
 
-textarea{
+label {
+    color: #9DA5B4;
+    margin: 6px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+textarea {
     flex: 1;
     padding: 12px;
     resize: none;
     color: white;
-    background-color: #2A3142;
+    background-color: #1E2533;
     border: 1px solid #3A4256;
     font-family: monospace;
+    outline: none;
+    border-radius: 0 0 12px 12px;
 }
 
-.bottom{
+textarea:focus {
+    border: 1px solid #4CAF50;
+    box-shadow: 0 0 6px #4CAF50;
+}
+
+.bottom {
     flex: 1;
     background-color: #2A3142;
     display: flex;
-    margin: 10px;
+    margin: 6px 0 0 0;
     border-radius: 6px;
     flex-direction: column;
+    border: 1px solid #3A4256;
 }
 
-.bottom iframe{
+.bottom iframe {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     border: none;
     background-color: white;
+    border-radius: 0 0 6px 6px;
 }

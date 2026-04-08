@@ -1,8 +1,18 @@
 let allInputs = document.querySelectorAll('.top textarea');
 let output = document.querySelector("#output");
 
-let htmlCode = "<h1>Start Coding</h1>";
-let cssCode = "h1{color:red;}";
+let htmlCode = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Start Coding!</h2>
+</body>
+</html>`;
+let cssCode = "h2{color:red;}";
 let jsCode = "console.log('Hello World!')";
 
 allInputs[0].value = htmlCode
